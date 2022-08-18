@@ -19,10 +19,17 @@
       title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
       data-password-input>
 
+      <input class="writable-content hidden" type="password" placeholder="Repeat password"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+      data-repeat-password-input>
+
     <input class="writable-content hidden" type="email" placeholder="user@emailprovider.domain"
     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Must contain a username, @, provider and a domain" data-email-input>
 
-    <input class="submit-button" title="Sign in" type="submit" value="Sign In" data-submit-button>
+    <input class="submit-button" title="Sign in" type="submit" value="Sign In" data-sign-in-button>
+
+    <input class="submit-button hidden" title="Send code" type="submit" value="Send code" data-recover-button>
 
     <a href="#" data-forgot-password-button>Forgot Password</a>
         
