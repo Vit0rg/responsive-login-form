@@ -58,11 +58,7 @@ function loadNewUserContent()
   hiddenToggler(elementsToToggle, newElementsState)
   signUp.classList.add("submit-button")
 
-  signUp.addEventListener("click", () =>
-  {
-    alert("User registered")
-    loadLoginContent
-  })
+  signUp.addEventListener("click", loadLoginContent)
 }
 
 signInButton.addEventListener("click", ()=>
