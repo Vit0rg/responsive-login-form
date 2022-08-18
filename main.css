@@ -93,3 +93,8 @@ a:hover
 {
   color: hsl(180, 100%, 45%);
 }
+
+.hidden
+{
+  display: none;
+}
